@@ -1,0 +1,97 @@
+/*
+----------------------------- ENTENDENDO O GRID ----------------------------------
+
+    Sabemos como colocar esse grid-column graças á inspeção que fizemos no nosso grid,
+  que é só apertar F12 que aparece e você vai no grid e lá vai mostrar alguns números,
+  e lá vocë vai ver aonde vocë vai definir a quantidade de colunas que seu item vai 
+  pegar, mas primeiro você vai colocar a quantidade de colunas que você deseja com o
+  seguinte comando:
+
+  === grid-template-columns: 1fr 1fr 1fr;
+
+    Aqui eu estou defindo três colunas, se eu desejo que meu item fique na 2 coluna basta
+  colocar na div da sua classe que deseja deixar ele na segunda coluna:
+
+  === grid-column: 2;
+
+    Já se eu desejo colocar ele em mais de uma coluna, basta eu colocar uma / e colocar as
+  colunas que eu desejo que ele preencha, lembrando que você vai colocar as linhas que
+  deseja, para saber as linhas basta fazer a mesma coisa:
+
+  === grid-column: 2 / 3; (Ele vai pegar da linha 2 até a linha 3)
+
+  === grid-column: 1 / -1 (Ele vai pegar até a linha final)
+
+    Já se você quiser expandir o seu item por mais de uma coluna automaticamente, é so usar
+  o span que vai expandir pela qtde de colunas, lembrando que se você expandir seu item por mais
+  colunas que restam na linha, ele vai acabr pegando a linha debaixo:
+
+  === grid-column: span 3; (ELe expandirá su item para três colunas)
+
+  === grid-column: 2 / span 2; (Ele expandirá seu item a partir da coluna 2)
+
+  ------------------------------------------------------------------------------------------
+*/
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  place-items: end center;
+}
+.titulo {
+  grid-column: 2;
+  text-align: right;
+}
+.preco {
+  place-self: start end; /*Mesma função do place-content, porem funicona só pra esse item*/
+}
+.descricao {
+  text-align: right;
+}
+.comprar {
+  align-self: start;
+  text-align: center;
+}
+
+
+/* ------------------ Estilos Gerais ------------------ */
+
+body {
+  font-family: Arial;
+  margin: 40px;
+}
+h1,
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+p,
+span {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.comprar {
+  background-color: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.preco {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
