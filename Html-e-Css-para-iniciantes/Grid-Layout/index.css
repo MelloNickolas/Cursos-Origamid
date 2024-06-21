@@ -33,28 +33,32 @@
   ------------------------------------------------------------------------------------------
 */
 
+/* ---------------------------- ROW AND COLUMNS MODELS -----------------------------------
+  grid-template-rows: 300px auto; -- Primeira linha tem 300px e a segunda tamanh auto 
+  grid-auto-rows: 200px; -- Toda linha criada que não foi definida, vai ter 200px
+  grid-template-rows: repeat(4, 200px);  -- Aqui ele está repetindo 4 linhas com 200px
+*/
+/* ----------------------------------- GRID AREA -----------------------------------------
+  grid-area; 2 / 3;
+  Aqui ele fala para se posicionar na 2 linha e na 3 coluna
+*/
+
+
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  place-items: end center;
+  grid-template-columns: repeat(2, 1fr);
+
 }
 .titulo {
-  grid-column: 2;
-  text-align: right;
+  grid-column: 1 / -1;
 }
-.preco {
-  place-self: start end; /*Mesma função do place-content, porem funicona só pra esse item*/
+.info{
+  display: grid;
+  place-items: start;
+  place-self: start;
+  gap: 20px;
 }
-.descricao {
-  text-align: right;
-}
-.comprar {
-  align-self: start;
-  text-align: center;
-}
-
-
 /* ------------------ Estilos Gerais ------------------ */
 
 body {
