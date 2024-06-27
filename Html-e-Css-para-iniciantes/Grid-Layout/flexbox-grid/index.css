@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 body{
   margin: 0px
@@ -26,13 +27,20 @@ quantidade para todos .
   Aqui se o valor for 1 ele adapta o conteudo da div, conseguindo quebrá-lô
   para manter responsivo , já se o valor for 0 o minimo do tamanho vai ser 
   o tamanho do conteudo que tem dentro dele.
-  */
 
   flex: 1;
-  /*
   Aqui por padrão ele ta definindo o 
   flex-grow: 1; -- você quer que o elemento preencha tudo
   flex-shrink: 1; -- você quer que ele fique responsivo podendo quebrar o conteudo 
   flex-basis: 0%; o espaço distribuido para os elementos tem que ser igual
   */
+}
+
+
+.grid{
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto)); 
+  /* preencha quantas colunas derm porem elas devem ter no minimo 150px e no maximo auto */
 }
