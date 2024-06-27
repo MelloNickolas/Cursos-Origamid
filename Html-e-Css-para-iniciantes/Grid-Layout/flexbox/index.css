@@ -2,9 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
 }
 body{
   margin: 0px
@@ -14,4 +11,28 @@ h2{
   border: 1px solid #d7d7d7;
   padding: 20px;
   margin: 0px;
+  
+/*
+  flex-grow: 1; 
+Distribui o espaço em branco para os elemento do h2 sempre aumentando a mesma 
+quantidade para todos .
+
+  flex-basis: 0; 
+  define o minimo que os elementos vão ter de tamanho, se o basis for 0
+  ele iguala o tamanho der todos, porem se você definir que terá 200px
+  todos os elementos que estão dentro do display flex terão 200px.
+
+  flex-shrink: 1;
+  Aqui se o valor for 1 ele adapta o conteudo da div, conseguindo quebrá-lô
+  para manter responsivo , já se o valor for 0 o minimo do tamanho vai ser 
+  o tamanho do conteudo que tem dentro dele.
+  */
+
+  flex: 1;
+  /*
+  Aqui por padrão ele ta definindo o 
+  flex-grow: 1; -- você quer que o elemento preencha tudo
+  flex-shrink: 1; -- você quer que ele fique responsivo podendo quebrar o conteudo 
+  flex-basis: 0%; o espaço distribuido para os elementos tem que ser igual
+  */
 }
