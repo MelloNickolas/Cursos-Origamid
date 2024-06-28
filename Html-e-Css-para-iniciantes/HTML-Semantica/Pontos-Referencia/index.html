@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pontos de Referência</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+ <!-- HEADER é o cabeçalho principal do site -->
+  <header>
+    <img src="" alt="">
+
+      <!-- 
+        A tag NAV é usada para mostrar onde é a navegaçao do seu site, é usada para
+        mostrar onde são os blocos de navegação.
+
+        O ARIA-LABEL serve para marcar qual é a sua navegação, ou seja, caso tenha mais de
+        um bloco de navegação no site, ele vai mostrar essa NAV como a NAV primária
+      -->
+    <nav aria-label="primária">
+      <a href="/">Sobre</a>
+      <a href="/">Contato</a>
+    </nav>
+  
+  </header>
+
+
+  <!-- 
+  A tag MAIN é o conteudo principals da página, onde tudo que você quiser mostrar
+  vai estar dentro dessa tag, o conteudo inteiro da página
+   -->
+  <main>
+    <h1>Bicicletas Bikcraft</h1>
+    <p>Teste</p>
+  </main>
+
+  <!--
+  O Article ele é usado como um ponto de referencia para o navegador, aqui como mostra no 
+  exemplo ele está mostrando sobre o bik, ou seja se a pessoa usar uma lista de leitura, vai aparecer
+  como se fosse uma parte do site destinada a isso
+
+  o ARIA-LABELLEDBY ele é usado em conjunto com um id, isso ocorre porque caso a lista de leitura chegue 
+  no bloco, se tivesse uma area-label normal, ela leria o conteúdo da area-label depois o h1, podendo repetir
+  o que ela falou, e pra isso não acontecer a gente usa esse item para ele ler somente o que está no ID.
+
+  ------------------------------------- SECTION -------------------------------------------------
+
+  O section nõ possui muita diferença do article, acredito que a mairo diferença entre os dois é que o article
+  eleautomaticamente cria um ponto de referencia, já a section precisaria de um ARIA-LABEL para criar um ponto
+  de referência.
+  -->
+  <article aria-labelledby="sobrebik">
+    <header>
+      <h2 id="sobrebik">Sobre a Bikcraft</h2>
+      <p>Autor: André Rafael</p>
+    </header>
+
+    <p>A empresa foi fundada em 2014.</p>
+
+    <footer>
+      <p>Alguns direitos reservados.</p>
+    </footer>
+  </article>
+
+  <div>
+    <h2>Sobre a Surfbot</h2>
+    <p>A empresa foi fundada em 2014.</p>
+  </div>
+
+  <!-- FOOTER é o nosso do rodapé do site -->
+  <footer>
+    <p>Alguns direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
