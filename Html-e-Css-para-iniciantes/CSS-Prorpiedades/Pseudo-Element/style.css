@@ -1,0 +1,34 @@
+/*
+Para explicar o básico, é como se ele colocasse uma div antes(before) ou depois(after) do seu elemento, 
+ele sempre tem que ter um content: "" dentro dele, isso vai definir o que você vai colocar nesse pseudo elemento.
+Um exemplo é você querer colocar algo pra decorar, um quadrado, alguma coisa, isso funcionaria,
+ai você não precisaria criar uma outra div.
+*/
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#caf, #fff);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}

@@ -1,0 +1,69 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+}
+
+/* Quando o mouse passa por cima ativa essa classe */
+a:hover {
+  background: #adf;
+  color: #147;
+}
+
+/* QUando ele esta no foco ativa a classe, um exemplo é quando você aperta o tab, ai ele ficaria em foco */
+a:focus {
+  background: #cfa;
+  color: #371;
+}
+
+/* Quando você ativa, aperta o botão e ele fica ativo, ai aparece essa classe, um exemplo é para você usar quando
+  um filtro está ativo, quero procurar só as camisas, ai o borão camisas diferencia um pouco  */
+a:active {
+  background: #ffa;
+  color: #761;
+}
+
+/* 
+Esse é mais usado para linmks, sabe quando você aperta e depois volta e o link fica roxo, então tem como usar 
+essa pseudo-classe para mudar isso.
+a:visited {
+  background: #fda;
+  color: #731;
+} */
+
+
+/* Seleciona somente o primeiro elemento, somente ele vai ter esse background */
+.lista-1 li:first-child {
+  background: #caf;
+}
+
+/* Seleciona somente o ultimo elemento, somente ele vai ter esse background */
+.lista-1 li:last-child {
+  background: #cfa;
+}
+
+/* Aqui nós estamos selecionando o terceiro elemento, porém eu posso selecionar o quarto, quinto etc...*/
+.lista-1 li:nth-child(3) {
+  background: #cfa;
+}
+
+/* Seleciona os itens de 3 em 3, o terceiro, o sexto, o nono ...*/
+.lista-2 li:nth-child(4n) {
+  background: #cfa;
+}
+
+/*Esse aqui ele vai falar para não selecionar os elementos, um exemplo, você colocou para pintar todos os elementos,
+ porem voce nao quer que na primeira, na ultima e no item que voce colocou a classe fique com essa cor, 
+ entao bastas colocar esse comando que ele vai realizar isso.*/
+.lista-3 li:not(:first-child, :last-child, .terceiro) {
+  background: #caf;
+}
+
+/* Aqui ele está falando que o h2 que tem a classe contato não é pra ter underline */
+h2:not(.contato) {
+  text-decoration: underline;
+}
