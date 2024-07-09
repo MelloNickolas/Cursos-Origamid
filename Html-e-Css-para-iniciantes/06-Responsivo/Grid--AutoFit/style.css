@@ -1,0 +1,37 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 400px) {
+  .minmax img {
+    order: 2;
+  }
+}
+
+/*
+ repeat (auto-fit, 300px) 
+ Esse auto-fit, a função dele é aumentar quantas colunas der, aqui ele vai criar o
+máximo de colunas de 300px que der na tela, normalmente ele não funciona com a unidade
+de medida Fr.
+
+ repeat(auto-fit, minmax(150px, 1fr));
+ Esse código, como eu já expliquei, ele vai criar o máximo de colunas que der, porem
+agora as colunas tem que ter no minimo 150px, e no máximo 1Fr que significa que ele vai
+preencher o espaço que sobrou, com isso quando tiver espaço ele vai preencher o máximo 
+que der e distribuir entre as colunas, porém quando elas chegarem a 150px, ele vai começar
+a quebrar e jogar pra linha de baixo, deixando responsivo.
+ */ 
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+p {
+  font-size: 2rem;
+}
