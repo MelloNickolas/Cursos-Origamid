@@ -3,16 +3,20 @@ img {
   display: block;
 }
 
+/* Criei duas colunas */
 div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
+/* Pega da primeira até a última coluna */
 h1 {
   grid-column: 1 / -1;
 }
 
+/* max-width, menor que 600px, ou seja quando a tela for menor que 600px, a tela
+vai possuir o sguinte CSS. */
 @media (max-width: 600px) {
   div {
     grid-template-columns: 1fr;
@@ -22,12 +26,17 @@ h1 {
   }
 }
 
+/* min-width, maior que 1000px, ou seja quando a tela for maior que 1000px, a tela
+vai possuir o sguinte CSS. */
 @media (min-width: 1000px) {
   html {
     font-size: 150%;
+    /*Aumenta as fontes do site, sempre importante usar em REM as medidas
+    que se torna mais eficaz.*/
   }
 }
 
+/*Esse media ele define um tamanho de tela de 700 até 900px, e seta o seguinte CSS .*/
 @media (min-width: 700px) and (max-width: 900px) {
   p {
     background: lightskyblue;
