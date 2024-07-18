@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<!--
+FOR: Serve para voê relacionar o label com o input
+ID: Serve para você relacionar o input com o label
+NAME: é uma váriavel que serve para depois você puxar na url.
+TYPE: Tipo do input, se vai ser de senha, de numero etc...
+REQUIRED: É obrigátorio você preencher o campo, se não não valida.
+PLACEHOLDER: É o aviso que aparece dentro do input, informando sobre o que é ele.
+VALUE: Serve tambem como uma váriavel para URL, porem só para a checkbox, ele seria como se fosse a resposta pro NAME
+SELECT: é um iput meio diferente, normalmente usado para mostrar quais são as opções disponiveis.
+TEXTAREA: serve para mandar mesagens, ou colocar comentários respeitando as colunas e linhas.
+-->
+<body>
+  <div class="checkbox">
+    <input type="checkbox" id="marketing" name="marketing" value="marketing" />
+    <label for="marketing">Desejo receber avisos de promoções.</label>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" id="termos" name="termos" value="termos" />
+    <label for="termos">Li os termos e condições.</label>
+  </div>
+
+  <p>Entrega:</p>
+  <div class="radio">
+    <input type="radio" id="retirada" name="retirada" />
+    <label for="retirada">Retirar no local.</label>
+  </div>
+  <div class="radio">
+    <input type="radio" id="entrega" name="retirada" />
+    <label for="entrega">Entrega em casa.</label>
+  </div>
+
+  <label for="parcelas"></label>
+  <select name="parcelas" id="parcelas">
+    <option value="1x">1x de R$ 200</option>
+    <option value="2x">2x de R$ 100</option>
+    <option value="4x">4x de R$ 50</option>
+  </select>
+
+  <label for="mensagem"></label>
+  <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+</body>
+
+</html>
