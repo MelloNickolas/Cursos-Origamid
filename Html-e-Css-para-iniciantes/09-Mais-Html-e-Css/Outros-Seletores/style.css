@@ -7,14 +7,20 @@ a[href="#contato"] {
   border: 2px solid greenyellow;
 }
 
+/*Começar com #*/
 [href^="#"] {
   background: tomato;
 }
 
+/*Terminar com .com*/
 [href$=".com"] {
   background: forestgreen;
 }
 
+/*
+ Este vai selecionar somente o filho direto, ou seja, se tiver uma outra section dentro com outro h2, so vai selecionar o h2
+ que está direto dentro da primeira section, ja a section que está dentro não vai ter sua section afetada.
+*/
 section > h2 {
   color: tomato;
 }
@@ -28,6 +34,9 @@ article {
   padding: 10px;
 }
 
+/*
+ Ele só vai selecionar a partir do segundo p, ou seja, o primeiro p não vai ser afetado
+*/
 p + p {
   margin-top: 20px;
 }
