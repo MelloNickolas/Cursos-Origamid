@@ -1,0 +1,30 @@
+/*Aqui definimos as cores do fundo*/
+:root {
+  --fundo: #fff;
+  --texto-1: #111;
+  --texto-2: #444;
+}
+
+/*Usando o modo escuro do site*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #222;
+    --texto-1: #eee;
+    --texto-2: #bbb;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background: var(--fundo);
+}
+
+/*Aqui estamos usando as cores que foram definidas*/
+h1 {
+  color: var(--texto-1);
+}
+
+p {
+  color: var(--texto-2);
+}
