@@ -62,6 +62,7 @@
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
 
+/* Aqui já trazemos a tipografia responsiva. */
 @media (max-width: 1200px) {
   .font-1-xxl {
     font-size: 3rem;
