@@ -10,6 +10,8 @@
       content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
     />
 
+    <!-- Esse preload significa que ele vai carregar seu css junto com seu html, não depois-->
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +26,7 @@
     <header class="header-bg">
       <div class="header container">
         <a href="./">
-          <img src="./img/bikcraft.svg" alt="Bikcraft" />
+          <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft" />
         </a>
 
         <nav aria-label="primaria">
@@ -49,12 +51,12 @@
           </p>
           <a class="botao" href="./bicicletas.html">Escolha a sua</a>
         </div>
-        <div>
-          <img
-            src="./img/fotos/introducao.jpg"
-            alt="Bicicleta elétrica preta."
-          />
-        </div>
+        <!-- Substituir imagem para ficar mais responsiva -->
+        <picture>
+          <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+          <!-- Aqui colocamos o width e heighit do tamanho da imagem, para otimizar o carregamento -->
+          <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta."/>
+        </picture>
       </div>
     </main>
 

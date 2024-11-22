@@ -1,5 +1,6 @@
 .introducao-bg {
-  background: var(--cor-12);
+  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+  bottom 160px left 20px;
   box-shadow: inset 0 -120px var(--cor-0); 
   /* Ele simplesmente realiza uma sombra para dar um efeito de sobreposição da imagem da bicicleta */
   /* INSET vai simplesmente criar uma sombra para dentro do elemento. */
@@ -33,6 +34,7 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
+    background: var(--cor-11);
     padding-top: 40px;
     box-shadow: inset 0 -60px var(--cor-0);
   }
