@@ -1,0 +1,13 @@
+/*Inicialmente eu quero que ele não apareça na tela*/
+.texto{
+display: none;
+}
+
+/*Classe que vamos usar para aparecer o texto com o display*/
+.texto.mostrar {
+  display: block;
+}
+
+body {
+  height: 1500px;
+}
