@@ -1,0 +1,86 @@
+
+/*Definindo as cores que vão ser roteadas.*/
+:root {
+  --cor-0: #ffffff;
+  --cor-1: #D6DAE0;
+  --cor-2: #B4B9BE;
+  --cor-3: #8B95A1;
+  --cor-4: #657385;
+  --cor-5: #4C5C6F;
+  --cor-6: #35455A;
+  --cor-7: #243346;
+  --cor-8: #162232;
+  --cor-9: #0E1B2A;
+  --cor-10: #0A0D20;
+  --cor-11: #030511;
+  --cor-12: #02030D;
+  --cor-p1: #BE9247;
+  --cor-p2: #A77E38;
+  --cor-p3: #8B6626;
+  --cor-p4: #725219;
+  --cor-p5: #5C4111;
+  --cor-p6: #3E2B09;
+  --cor-p7: #312105;
+}
+
+/*Definindo classes com cada cor do root*/
+.cor-0 {
+  color: var(--cor-0);
+}
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-3 {
+  color: var(--cor-3);
+}
+.cor-4 {
+  color: var(--cor-4);
+}
+.cor-5 {
+  color: var(--cor-5);
+}
+.cor-6 {
+  color: var(--cor-6);
+}
+.cor-7 {
+  color: var(--cor-7);
+}
+.cor-8 {
+  color: var(--cor-8);
+}
+.cor-9 {
+  color: var(--cor-9);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-11 {
+  color: var(--cor-11);
+}
+.cor-12 {
+  color: var(--cor-12);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-p3 {
+  color: var(--cor-p3);
+}
+.cor-p4 {
+  color: var(--cor-p4);
+}
+.cor-p5 {
+  color: var(--cor-p5);
+}
+.cor-p6 {
+  color: var(--cor-p6);
+}
+.cor-p7 {
+  color: var(--cor-p7);
+}
