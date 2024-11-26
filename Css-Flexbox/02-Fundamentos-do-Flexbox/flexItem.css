@@ -1,0 +1,32 @@
+.flexItem{
+
+  /*flex-grow faz basicamente a mesma coisa que o flex: 1; porem ele é colocado no item do container, ou seja
+  eu posso definir para somente um item preencher o espaço restante do container, e o outro manter o tamanho dele normal,
+  ou se eu colocar flex-grow: 2; em um item ele vai tentar crescer o dobro do outro */
+  flex-grow: 1;
+
+  /*quando definimos flex-grow: 1 ele vem comm um flex-basis: auto, ou seja ele expandir o item e manter o conteúdo dele centralizado,
+  crescendo todos por iguais, se voce colocar o 0 no seu flex-basis ele vai tentar manter todos os conteúdos do mesmo tamanho, ou seja,
+  independente da quantidade de conteúdo, os espaços vao ser os mesmos, ele nao vai aumentar proporcionalmente ao conteúdo como se fosse
+  o AUTO.
+  se você colocar o valor em px, o minimo de cada item vai ser esa medida, se tiver um numero 2, ele vai ter um item de 120px se o flex
+  tiver esse valor, porém se o conteúdo for maior, o item vai ficar de acordo com o conteudo dele*/
+  flex-basis : 0;
+
+  /*o flex-shrink é a capacidade de reduzir o tamanho do item para caber no seu container, exemplo eu tenho um container com 300px, e tem
+  2 itens dentro dele com um flex-basis de 200px, você percebe de primeira que esse basis vai estourar seu container, é ai q entra o shrink,
+  por padrão ele é definido como 1, que permite que os itens sejam reduzidos para se encaixar no container, porém se você colocar 0 ele nao
+  vai reduzir, ou seja, os itens do exemplo acima vao estourar seu container e ficar para fora*/
+  flex-shrink: 0 ;
+
+  /*o flex é basicamente uma juncao dos 3 acima onde voce pode decidir nessa sequencia(grow, shrink, bases), serve para deixar seu conteúdo
+  mais organizado*/
+  flex: 0 1 auto;
+
+  /*O order ele muda a ordem do html no seu display, ele vem como padrão valor 0, ou seja ela nao interfer em nada, porém se voce colocar um
+  valor 1, ele faz o item que você colocou como o primeiro., e assim por diante 2 vai para o segundo, ele organiza pelos numeros de orde, se 
+  tiver um -39, ele vai entrar como primeiro pois ele é o menor numero*/
+  order: 2;
+
+  /*o align-self, é a mesma coisa do allign-itens, porem ele só se aplica a um item, ou possom ter um item no comeco e outro no fim*/
+}

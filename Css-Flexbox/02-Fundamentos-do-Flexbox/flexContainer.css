@@ -1,0 +1,38 @@
+/*Primeiro temos que entender qu temos dois tipos de flex, os FLEX-CONTAINERS que sao a tag que envolve os irens do flex
+, exemplo se eu colocar um display: flex ele passa a ser um FLEX CONTAINER, e tambem temos o FLEX-ITEM é simplesmente
+os itens que estão dentro do FLEX CONTAINER, ou seja, ele indica onde os elementos devem ficar no flex container*/
+
+
+/*   FLEX CONTAINER   */
+.flexContainer {
+  
+  /*Ele vai deixar seu item flexivel, vai colocar um do lado do outro em linha*/
+  display: flex;
+
+  /*Esse já vem em conjunto com o display: flex, pois quando o display esceder o tammanho do container e o conteúdo começar
+  a extrapolar, nós usamos o flex-wrap para que ele quebre em outra linha, ou se voce quiser, mantenha tudo em uma linha*/
+  flex-wrap: wrap;
+
+  /*ja o flex: 1 nós vamos colocar dentro do nosso container, ou seja se voce tem um container que organiza varios botoes,
+  voce vai colocar nos botoes esse css, lembret-se que ele so funciona com display:flex, ele basicamente vai dividir o espaço 
+  que tem no container para os botões de forma igual, preenchendo todo o espaço, expandindo ao máximo os botões*/
+  flex: 1;
+
+  /*o flex-direction ele vai definir para onde seu display: flex vai, se ele vai ser em linha(row), ou em coluna(column)*/
+  flex-direction: column;
+
+  /*o flex-flow basicamente é uma juncao do flex-direction, com o flex-wrap onde eu coloco os dois dentro desse css, poupando linhas
+  e deixando nosso código mais limpo*/
+  flex-flow: column wrap-reverse; /*em vez de fazer a quebra em cima faz a quebra em baixo*/
+
+  /*O justify-content ele meio que vai alinhar os conteúdos do container, tipo colocar todos os botoes no comeco, centralizar eles*/
+  justify-content: center;
+
+  /*o align-itens faz a mesma coisa do justify-content, so que ele alinha NA ALTURA, ja o justify é na LINHA*/
+  align-items: center;
+
+  /*o align-content só vai funcionar se o seu flex-wrap: wrap, pois ele aplica esse estilo quando o flex é quabrado em mais linhas,
+  ele basicament faz a mesma coisa que o alig-itens, porém ele é muito melhor quando você tiver um flex-wrap*/
+  align-content: center;
+
+}
