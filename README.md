@@ -1,2 +1,5 @@
-# Cursos-Origamid
- The origamid company offers certifications in the area of ​​programming and design.  These certifications are teaching me a lot and updating me on new software functions, making me a better professional in my field.  All congratulations to Origamid
+<h1> <strong> Certificações da Origamid 👾 </strong> </h1>
+
+<p> 
+ Para poder aprimorar meu conhecimento realizei alguns cursos da <a href="https://www.origamid.com/">Origamid</a>, onde aprendi diversas formas de programar, caso queira ver um pouco do que eu aprendi com a Origammid, vou mostrar para vocês em ordem cronológica de conclusões.
+</p>
