@@ -1,0 +1,9 @@
+.gridLayout {
+  display: grid; /* Torna o elemento em um grid */
+  display: inline-grid; /* Torna o elemento em um grid, só que com um display inline tambem */
+  display: subgrid; /* Não é muito usado, porém era pra ser usado em um grid dentro do outro grid */
+
+  grid-template-columns: 1fr minmax(100px, 1fr); /* Define quantas colunas vai ter no grid, podendo ter inumeras. */
+  grid-template-columns: repeat(3, 1fr); /*Vai repetir 3 colunad com 1 unidade fracional*/
+  grid-template-rows: 1fr 1fr; /* Define quantas linhas vai ter o seu grid, podendo ter inumeras */
+}
